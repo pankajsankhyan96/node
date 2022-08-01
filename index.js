@@ -21,5 +21,5 @@ app.get("/", (req, res) => {
 
 //listen for request on port 3000, and as a callback function have the port listened on logged
 app.listen(PORT, () => {
-  console.log(`Server running at :${PORT}/`);
+  console.log(`Server running at : ${PORT}/`);
 });
