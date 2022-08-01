@@ -2,7 +2,7 @@ const express = require("express");
 const http = require("http");
 const app = express();
 require('dotenv').config();
-console.log('hello world', process.env.APP_MODE)
+console.log('hello world', process.env.API_URL)
 
 //Create HTTP server and listen on port 3000 for requests
 // const server = http.createServer((req, res) => {
@@ -15,7 +15,7 @@ console.log('hello world', process.env.APP_MODE)
 
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my Node App : " + process.env.APP_MODE})
+  res.json({ message: "Welcome to my Node App : " + process.env.API_URL})
 })
 
 //listen for request on port 3000, and as a callback function have the port listened on logged
