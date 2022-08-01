@@ -1,6 +1,5 @@
 const express = require("express");
 const http = require("http");
-const port = 3002;
 const app = express();
 require('dotenv').config();
 console.log('hello world', process.env.APP_MODE)
@@ -16,10 +15,10 @@ console.log('hello world', process.env.APP_MODE)
 
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder applicatiodn."  + JSON.stringify(process.env)})
+  res.json({ message: "Welcome to my Node App : " + process.env.APP_MODE})
 })
 
 //listen for request on port 3000, and as a callback function have the port listened on logged
-app.listen(port, () => {
-  console.log(`Server running at :${port}/`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server running at :${process.env.PORT}/`);
 });
