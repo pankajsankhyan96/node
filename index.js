@@ -15,7 +15,7 @@ console.log('hello world', process.env.APP_MODE)
 
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder applicatiodn."  + JSON.stringify(process.env)})
+  res.json({ message: "Welcome to my Node App : " + process.env.APP_MODE})
 })
 
 //listen for request on port 3000, and as a callback function have the port listened on logged
