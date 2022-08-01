@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "dotenv -e .env.development nodemon index.js"
+    "start": "dotenv -e .env.development nodemon index.js",
+    "build": "dotenv -e .env.production webpack"
   },
   "repository": {
     "type": "git",
