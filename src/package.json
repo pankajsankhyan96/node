@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "dotenv -e .env.development nodemon index.js",
-    "postinstall": "dotenv -e .env.production npm run build"
+    "postinstall": "dotenv -e .env.production npm run build",
+    "build": "npm run build"
   },
   "repository": {
     "type": "git",
