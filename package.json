@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
-  "scripts": {
-    "start": "dotenv -e .env.development nodemon index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pankajsankhyan96/node.git"
