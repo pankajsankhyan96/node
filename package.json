@@ -7,8 +7,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "dotenv -e .env.development nodemon index.js",
-    "heroku-postbuild": "dotenv -e .env.production nodemon index.js"
+    "heroku-postbuild": "dotenv -e .env.production nodemon index.js",
+    "start": "dotenv -e .env.development nodemon index.js"
   },
   "repository": {
     "type": "git",
