@@ -7,7 +7,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "heroku-postbuild": "dotenv -e .env.production nodemon index.js",
+    "build": "dotenv -e .env.production nodemon index.js",
     "start": "dotenv -e .env.development nodemon index.js"
   },
   "repository": {
