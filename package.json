@@ -7,8 +7,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "dotenv -e .env.development nodemon index.js",
-    "build": "dotenv -e .env.production nodemon index.js"
+    "start": "dotenv -e .env.development node index.js",
+    "build": "dotenv -e .env.production node index.js"
   },
   "repository": {
     "type": "git",
