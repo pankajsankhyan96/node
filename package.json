@@ -7,7 +7,6 @@
     "node": "14.x"
   },
   "scripts": {
-    "heroku-prebuild": "dotenv -e .env.production npm run build",
     "start": "dotenv -e .env.development nodemon index.js"
   },
   "repository": {
