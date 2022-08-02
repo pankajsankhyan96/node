@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "dotenv -e .env.development nodemon index.js",
-    "heroku-postbuild": "dotenv -e .env.production nodemon index.js"
+    "build": "ng build"
   },
   "repository": {
     "type": "git",
