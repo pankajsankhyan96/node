@@ -14,7 +14,6 @@
     },
     "environments": {
       "review": {
-        "addons": ["heroku-postgresql:hobby-dev"],
         "env": {
           "NODE_ENVR": "review-environment",
           "SECRET_TOKEN": {
