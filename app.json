@@ -1,6 +1,4 @@
 {
-    "name": "node",
-    "website": "https://pankaj-first-heroku-app.herokuapp.com/",
     "env": {
         "NODE_ENVR": "production-environment",
         "SECRET_TOKEN": {
