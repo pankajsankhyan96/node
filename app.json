@@ -15,7 +15,7 @@
     "environments": {
       "review": {
         "env": {
-          "NODE_ENVR": "review-environment",
+          "NODE_ENVR": "review-app-environment",
           "SECRET_TOKEN": {
             "description": "A secret key for verifying the integrity of signed cookies.",
             "generator": "secret"
