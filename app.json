@@ -1,7 +1,6 @@
 {
     "name": "node",
     "website": "https://pankaj-first-heroku-app.herokuapp.com/",
-    "addons": ["heroku-postgresql:standard-0"],
     "env": {
         "NODE_ENVR": "production-environment",
         "SECRET_TOKEN": {
