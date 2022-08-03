@@ -4,7 +4,6 @@ const app = express();
 require('dotenv').config();
 console.log('hello world', process.env.API_URL)
 const PORT = process.env.PORT;
-const appjson = require('./app.json')
 //Create HTTP server and listen on port 3000 for requests
 // const server = http.createServer((req, res) => {
 
@@ -13,7 +12,6 @@ const appjson = require('./app.json')
 //   res.setHeader('Content-Type', 'text/plain');
 //   res.end('Hello World\n');
 // });
-console.log(appjson.environments.review)
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to my New Node App : " + process.env.API_URL + "  App Mode : " + process.env.APP_MODE + " Node Env : " + process.env.NODE_ENV})
