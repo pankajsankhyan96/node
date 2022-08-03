@@ -1,0 +1,21 @@
+{
+    "name": "node",
+    "website": "https://pankaj-first-heroku-app.herokuapp.com/",
+    "addons": ["heroku-postgresql:standard-0"],
+    "env": {
+        "NODE_ENVR": "production",
+        "SECRET_TOKEN": {
+          "description": "A secret key for verifying the integrity of signed cookies.",
+          "generator": "secret"
+        },
+        "WEB_CONCURRENCY": {
+          "description": "The number of processes to run.",
+          "value": "5"
+        }
+    },
+    "environments": {
+      "review": {
+        "addons": ["heroku-postgresql:hobby-dev"]
+        }
+    }
+}
