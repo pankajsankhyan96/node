@@ -1,7 +1,6 @@
 {
     "name": "node",
     "website": "https://pankaj-first-heroku-app.herokuapp.com/",
-    "addons": ["heroku-postgresql:standard-0"],
     "env": {
         "NODE_ENVR": "production-environment",
         "SECRET_TOKEN": {
@@ -15,9 +14,8 @@
     },
     "environments": {
       "review": {
-        "addons": ["heroku-postgresql:hobby-dev"],
         "env": {
-          "NODE_ENVR": "review-environment",
+          "NODE_ENVR": "review-app-environment",
           "SECRET_TOKEN": {
             "description": "A secret key for verifying the integrity of signed cookies.",
             "generator": "secret"
